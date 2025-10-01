@@ -1,0 +1,90 @@
+/* */ 
+
+
+body{
+    font-family:monospace;
+    background-color: var(--bg-color); 
+    margin:50px; 
+    display: grid; 
+    grid-template-columns: repeat(2,200px);
+    gap: 299px; 
+    resize: auto;
+}
+
+button{
+    font-family: monospace;
+    background-color: var(--main-color);
+    height: 50px; 
+    width: 150px;
+    border-radius: 10px; 
+    border-color: white; 
+    
+}
+button:hover{
+    background-color: rgb(232, 206, 206); 
+    border-color: black; 
+}
+.grid-container{
+    /* The new book will be added in this container */
+    
+    gap: 20px; 
+
+
+}
+
+.grid-container > div{
+    background-color: var(--accent-color);
+    border: 3px solid; 
+    border-color: white; 
+    border-radius: 10px;
+    padding: 10px; 
+    
+    
+    
+}
+
+:root{
+    --bg-color: #c9d6a9; 
+    --accent-color: #f1a742;
+    --text-color: #ffecec00; 
+    --main-color: #ffadb4;
+    
+}
+
+.pop-up{
+    margin: 300px; 
+
+    width: 300px; 
+    height: 150px; 
+    background-color: #f1a742;
+    padding:20px;
+    border: 1px solid; 
+    border-radius: 15px; 
+    display: flex; 
+    align-items: center;
+    position: absolute;
+
+}
+
+#hidden{
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+}
+
+.together{
+  display: flex;
+  justify-content: space-between; /* left column + right button */
+  align-items: flex-start;        /* align top */
+                    
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  /* stack Yes/No vertically */
+               /* space between Yes/No */
+}

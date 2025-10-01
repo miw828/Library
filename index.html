@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+
+<body>
+
+    
+        <div class = "grid-container">
+            <h1>Books</h1>
+
+            <div class = "book" id = "book">
+            <h3>Title: </h3>
+            <h3>Author: </h3>
+            </div>
+
+
+        </div>
+
+        <div class = "sidebar">
+
+            <button class = "add" id = "add">Add Book +</button>
+            <button class = "edit" id = "edit"> Edit </button>
+        </div>
+
+
+    <div class = "pop-up" id = "hidden">
+        <form id="book-form" title = "book-form">
+            <label for="book-title">Book Title: </label>
+            <input type="text" id="book-title" name="book-title" required>
+            <h2></h2>
+            <label for="author">Author: </label>
+            <input type="text" id="author" name="author" required>
+
+
+            
+           <h3>Have you read this?</h3>
+           <div class = "together">
+           <div class = "options">
+             <label>
+                 <input type="checkbox"> Yes
+            </label>
+            <label>
+                <input type="checkbox"> No
+            </label>
+            </div>
+            <button class = "SUBMIT" id = "sub-button">SUBMIT</button>
+           </div>
+           
+
+
+
+
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+    
+ <script src="book.js"></script>
+
+</body>
+</html>
