@@ -1,6 +1,7 @@
 let addButton = document.getElementById("add");
 let editButton = document.getElementById("edit"); // will do this one later
 let submitButton = document.getElementById("sub-button");
+
 const book = document.getElementById("book"); 
 const pop = document.getElementById("hidden"); 
 // add when the button add gets clicked it the pop-up will appear and then the input
@@ -10,12 +11,30 @@ function submitBook(){
     const titleInput = document.getElementById("book-title");
     const authorName = document.getElementById("author");
     
-
+    
 
     const newBook = document.createElement("div");  // this will create the new grid 
     newBook.classList.add("book"); // this adds the class of the item 
     newBook.innerHTML = `<h3>Title: ${titleInput.value}</h3><h3>Author: ${authorName.value}</h3>`;
+    // will also have to add the minus button here 
+    const deleteWrapper = document.createElement("div");
+    deleteWrapper.classList.add("minus");
 
+   
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "-";
+    deleteButton.classList.add("minus");
+
+   
+
+    // delete functionality
+    deleteButton.addEventListener("click", () => {
+        newBook.remove();
+    });
+
+    deleteWrapper.appendChild(deleteButton);
+    newBook.appendChild(deleteWrapper);
     document.querySelector(".grid-container").appendChild(newBook); 
 
 
@@ -37,3 +56,12 @@ addButton.addEventListener("click", () => {
   pop.style.display = "block"; // show the form
 
 });
+
+editButton.addEventListener("click", () => {
+    document.querySelectorAll(".book .minus").forEach(btn => {
+        btn.style.display = (btn.style.display === "none" ? "inline-block" : "none");
+    });
+});
+
+
+
