@@ -11,4 +11,6 @@ You are also able to delete the book using the edit button
 
 <h3>Live Demo</h3>
 
-<h3>What it looks like</h3>
+https://github.com/user-attachments/assets/d7d8499e-2178-4cec-a21b-d32ce8667375
+
+
